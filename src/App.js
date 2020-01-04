@@ -1,10 +1,14 @@
 import React from 'react';
+import {Route} from 'react-router-dom'
+import HomePage from './components/pages/HomePage'
+import LoginPage from './components/pages/LoginPage'
 
-
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     
+    <div>
+     <Route path='/' exact component={HomePage}></Route>
+     <Route path='/login' exact component={LoginPage}></Route>
+
     </div>
   );
 }
